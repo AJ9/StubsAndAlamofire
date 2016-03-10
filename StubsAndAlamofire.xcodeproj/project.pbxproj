@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEBD7850E437C2CA449DE1F5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB730C7A5976362A475F38 /* Pods.framework */; };
+		D2903A321C91737A0057DFF9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D2903A311C91737A0057DFF9 /* Podfile */; };
+		D2903A341C9174A20057DFF9 /* StubsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2903A331C9174A20057DFF9 /* StubsExtension.swift */; };
 		D2F4F9811C908AF200690535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4F9801C908AF200690535 /* AppDelegate.swift */; };
 		D2F4F9831C908AF200690535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4F9821C908AF200690535 /* ViewController.swift */; };
 		D2F4F9861C908AF200690535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F4F9841C908AF200690535 /* Main.storyboard */; };
 		D2F4F9881C908AF200690535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F4F9871C908AF200690535 /* Assets.xcassets */; };
 		D2F4F98B1C908AF200690535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F4F9891C908AF200690535 /* LaunchScreen.storyboard */; };
 		D2F4F9961C908AF200690535 /* StubsAndAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4F9951C908AF200690535 /* StubsAndAlamofireTests.swift */; };
+		D2F4F9A11C908B0400690535 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4F9A01C908B0400690535 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4853628A2CE2130DEF84A265 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6ACB730C7A5976362A475F38 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2903A311C91737A0057DFF9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D2903A331C9174A20057DFF9 /* StubsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubsExtension.swift; sourceTree = "<group>"; };
 		D2F4F97D1C908AF200690535 /* StubsAndAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StubsAndAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F4F9801C908AF200690535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F4F9821C908AF200690535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,8 @@
 		D2F4F9911C908AF200690535 /* StubsAndAlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StubsAndAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F4F9951C908AF200690535 /* StubsAndAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubsAndAlamofireTests.swift; sourceTree = "<group>"; };
 		D2F4F9971C908AF200690535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F4F9A01C908B0400690535 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		DF73B9FDEEEAFBA60DDAB867 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBD7850E437C2CA449DE1F5 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40A580D7BD150CAA0D288771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ACB730C7A5976362A475F38 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2F4F9741C908AF200690535 = {
 			isa = PBXGroup;
 			children = (
+				D2903A311C91737A0057DFF9 /* Podfile */,
 				D2F4F97F1C908AF200690535 /* StubsAndAlamofire */,
 				D2F4F9941C908AF200690535 /* StubsAndAlamofireTests */,
 				D2F4F97E1C908AF200690535 /* Products */,
+				E092A2E3203BC5FA120B7E07 /* Pods */,
+				40A580D7BD150CAA0D288771 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +105,7 @@
 				D2F4F9871C908AF200690535 /* Assets.xcassets */,
 				D2F4F9891C908AF200690535 /* LaunchScreen.storyboard */,
 				D2F4F98C1C908AF200690535 /* Info.plist */,
+				D2F4F9A01C908B0400690535 /* HTTPClient.swift */,
 			);
 			path = StubsAndAlamofire;
 			sourceTree = "<group>";
@@ -90,10 +113,20 @@
 		D2F4F9941C908AF200690535 /* StubsAndAlamofireTests */ = {
 			isa = PBXGroup;
 			children = (
+				D2903A331C9174A20057DFF9 /* StubsExtension.swift */,
 				D2F4F9951C908AF200690535 /* StubsAndAlamofireTests.swift */,
 				D2F4F9971C908AF200690535 /* Info.plist */,
 			);
 			path = StubsAndAlamofireTests;
+			sourceTree = "<group>";
+		};
+		E092A2E3203BC5FA120B7E07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4853628A2CE2130DEF84A265 /* Pods.debug.xcconfig */,
+				DF73B9FDEEEAFBA60DDAB867 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2F4F99A1C908AF200690535 /* Build configuration list for PBXNativeTarget "StubsAndAlamofire" */;
 			buildPhases = (
+				65130AFBF68D78E9838B6BF9 /* Check Pods Manifest.lock */,
 				D2F4F9791C908AF200690535 /* Sources */,
 				D2F4F97A1C908AF200690535 /* Frameworks */,
 				D2F4F97B1C908AF200690535 /* Resources */,
+				2E0E8A94875C3F23A2E143E4 /* Embed Pods Frameworks */,
+				33AB44257DAD6D185461A777 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +215,7 @@
 			files = (
 				D2F4F98B1C908AF200690535 /* LaunchScreen.storyboard in Resources */,
 				D2F4F9881C908AF200690535 /* Assets.xcassets in Resources */,
+				D2903A321C91737A0057DFF9 /* Podfile in Resources */,
 				D2F4F9861C908AF200690535 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +229,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E0E8A94875C3F23A2E143E4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33AB44257DAD6D185461A777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65130AFBF68D78E9838B6BF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2F4F9791C908AF200690535 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -199,6 +284,7 @@
 			files = (
 				D2F4F9831C908AF200690535 /* ViewController.swift in Sources */,
 				D2F4F9811C908AF200690535 /* AppDelegate.swift in Sources */,
+				D2F4F9A11C908B0400690535 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F4F9961C908AF200690535 /* StubsAndAlamofireTests.swift in Sources */,
+				D2903A341C9174A20057DFF9 /* StubsExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +412,7 @@
 		};
 		D2F4F99B1C908AF200690535 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4853628A2CE2130DEF84A265 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StubsAndAlamofire/Info.plist;
@@ -336,6 +424,7 @@
 		};
 		D2F4F99C1C908AF200690535 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF73B9FDEEEAFBA60DDAB867 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StubsAndAlamofire/Info.plist;
@@ -388,6 +477,7 @@
 				D2F4F99C1C908AF200690535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2F4F99D1C908AF200690535 /* Build configuration list for PBXNativeTarget "StubsAndAlamofireTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +486,7 @@
 				D2F4F99F1C908AF200690535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
